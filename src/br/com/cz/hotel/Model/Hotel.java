@@ -16,7 +16,7 @@ public abstract class Hotel {
         int cont = 0;
         for (int i = 0; i < this.quartos.length; i++) {
             if (this.quartos[i] != null) {
-                if (this.quartos[i].disponibilidade == true) {
+                if (this.quartos[i].verificarDisponibilidade() == true) {
                     cont++;
                 }
             }
@@ -31,7 +31,7 @@ public abstract class Hotel {
         boolean encontrado = false;
         for (int i = 0; i < this.quartos.length; i++) {
             if (this.quartos[i] != null) {
-                if (this.quartos[i].tipoDeQuarto.equalsIgnoreCase(tipoDeQuarto) && this.quartos[i].disponibilidade == true) {
+                if (this.quartos[i].tipoDeQuarto.equalsIgnoreCase(tipoDeQuarto) && this.quartos[i].verificarDisponibilidade() == true) {
                     if (encontrado == false) {
                         System.out.printf("\nQuartos disponiveis do tipo \"%s\":", tipoDeQuarto);
                         encontrado = true;
@@ -68,20 +68,9 @@ public abstract class Hotel {
         }
     }
     public void fazerReserva(Reserva reserva) {
-        if (reserva.cliente.adicionarReserva(reserva) == true) {
-            reserva.quarto.disponibilidade = false;
-            System.out.printf("\nO cliente %s reservou o quarto nº %d com sucesso.", reserva.cliente.nome, reserva.quarto.numeroDeQuarto);
-        }
+        //work in progress
     }
     public void cancelarReserva(Cliente cliente, int nmrQuarto, String nomeDoHotel) {
-        for (int i = 0; i < cliente.reservas.length; i++) {
-            if (cliente.reservas[i] != null) {
-                if (cliente.reservas[i].quarto.numeroDeQuarto == nmrQuarto && cliente.reservas[i].hotel.nome.equalsIgnoreCase(nomeDoHotel)) {
-                    cliente.reservas[i].quarto.disponibilidade = true;
-                    cliente.reservas[i] = null;
-                    System.out.print("\nA reserva do quarto foi cancelada com sucesso!");
-                }
-            }
-        }
+        //work in progress
     }
 }
