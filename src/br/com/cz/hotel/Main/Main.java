@@ -26,16 +26,19 @@ public class Main {
         ClienteAdulto clienteAdulto = new ClienteAdulto(
                 "Richard",
                 157,
-                "poofesfafic@gmail.com"
+                "poofesfafic@gmail.com",
+                1
         );
 
         HotelBeiraMar hotelBeiraMar = new HotelBeiraMar(
                 "Neutral Milk Hotel",
-                "Ruston, Luisiana"
+                "Ruston, Luisiana",
+                true
         );
         HotelSimples hotelSimples = new HotelSimples(
                 "California",
-                "EUA"
+                "EUA",
+                34
         );
 
         hotelBeiraMar.adicionarQuarto(quartoLuxo);

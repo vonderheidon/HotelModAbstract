@@ -26,6 +26,7 @@ public class Reserva {
 
     public void exibirInfo() {
         System.out.printf("\nReserva feita para: %s\n", this.cliente.nome);
+        System.out.printf("Nome do hotel: %s\n", this.hotel.nome);
         System.out.printf("Data do checkin: %s\n", this.checkIn.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
         System.out.printf("Data do checkout: %s\n", this.checkOut.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
         System.out.printf("Numero do quarto: %d", this.quarto.numeroDoQuarto);
