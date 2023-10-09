@@ -4,9 +4,9 @@ public class QuartoLuxo extends Quarto {
     public boolean possuiHidromassagem;
     public boolean possuiMiniBar;
 
-    public QuartoLuxo(int numeroDeQuarto, String tipoDeQuarto, double precoPorNoite, boolean disponibilidade, int qtdClientes,
+    public QuartoLuxo(int numeroDoQuarto, String tipoDeQuarto, double precoPorNoite, boolean disponibilidade,
                       boolean possuiHidromassagem, boolean possuiMiniBar) {
-        super(numeroDeQuarto, tipoDeQuarto, precoPorNoite, disponibilidade, qtdClientes);
+        super(numeroDoQuarto, tipoDeQuarto, precoPorNoite, disponibilidade);
         this.possuiHidromassagem = possuiHidromassagem;
         this.possuiMiniBar = possuiMiniBar;
     }
@@ -15,6 +15,6 @@ public class QuartoLuxo extends Quarto {
     public void exibirInfo() {
         super.exibirInfo();
         System.out.printf("\nPossui Hidromassagem: %s\n", this.possuiHidromassagem ? "Sim" : "Nao");
-        System.out.printf("\nPossui mini-bar: %s", this.possuiMiniBar ? "Sim" : "Nao");
+        System.out.printf("Possui mini-bar: %s", this.possuiMiniBar ? "Sim" : "Nao");
     }
 }

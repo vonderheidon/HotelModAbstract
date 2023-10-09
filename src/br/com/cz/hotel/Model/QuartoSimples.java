@@ -4,9 +4,9 @@ public class QuartoSimples extends Quarto {
     public boolean possuiArCondicionado;
     public boolean wifiGratis;
 
-    public QuartoSimples(int numeroDeQuarto, String tipoDeQuarto, double precoPorNoite, boolean disponibilidade, int qtdClientes,
+    public QuartoSimples(int numeroDoQuarto, String tipoDeQuarto, double precoPorNoite, boolean disponibilidade,
                          boolean possuiArCondicionado, boolean wifiGratis) {
-        super(numeroDeQuarto, tipoDeQuarto, precoPorNoite, disponibilidade, qtdClientes);
+        super(numeroDoQuarto, tipoDeQuarto, precoPorNoite, disponibilidade);
         this.possuiArCondicionado = possuiArCondicionado;
         this.wifiGratis = wifiGratis;
     }

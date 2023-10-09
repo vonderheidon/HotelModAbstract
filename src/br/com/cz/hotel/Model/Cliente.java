@@ -20,7 +20,7 @@ public abstract class Cliente {
         boolean encontrado = false;
         for (int i = 0; i < this.reservas.length; i++) {
             if (this.reservas[i] != null) {
-                System.out.printf("\n - Hotel: %s - Quarto: %d", this.reservas[i].hotel.nome, this.reservas[i].quarto.numeroDeQuarto);
+                System.out.printf("\n - Hotel: %s - Quarto: %d", this.reservas[i].hotel.nome, this.reservas[i].quarto.numeroDoQuarto);
                 encontrado = true;
             }
         }

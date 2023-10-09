@@ -1,7 +1,7 @@
 package br.com.cz.hotel.Model;
 
-public class HotelDePets extends Hotel {
-    public HotelDePets(String nome, String endereco) {
+public class HotelSimples extends Hotel {
+    public HotelSimples(String nome, String endereco) {
         super(nome, endereco);
     }
 }
